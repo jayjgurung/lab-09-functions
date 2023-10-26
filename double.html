@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function double(n){
+            if (typeof(n)!="number"){
+                console.log("Error!\nNot a number");
+                return;
+            } // will exit here if the parameter passed to funtion is not a number
+            console.log(n*2);
+        }
+        var userInput = prompt("Number please...");
+        var usernum = parseInt(userInput,10);
+        double(usernum);
+    </script>
+</body>
+</html>
